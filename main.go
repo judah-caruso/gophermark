@@ -166,7 +166,7 @@ func (gm *Gophermark) Draw(sc *eb.Image) {
 		tps := eb.ActualTPS()
 
 		ebitenutil.DebugPrintAt(sc, fmt.Sprintf("fps: %.2f", fps), 10, 10)
-		ebitenutil.DebugPrintAt(sc, fmt.Sprintf("fps: %.2f", tps), 10, 24)
+		ebitenutil.DebugPrintAt(sc, fmt.Sprintf("tps: %.2f", tps), 10, 24)
 		ebitenutil.DebugPrintAt(sc, fmt.Sprintf("gophers: %d", gm.Total), 10, 38)
 
 		eb.SetWindowTitle(fmt.Sprintf("Ebitengen Gophermark, fps: %.2f, gophers: %d", fps, gm.Total))
